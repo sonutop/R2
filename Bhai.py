@@ -108,7 +108,7 @@ async def run_bgmi(chat_id, ip, port, time, context):
 
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./soul {ip} {port} {time} 1900",
+            f"./soul {ip} {port} {time} 1800",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
